@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#2B5A27"/>
+  <rect width="1200" height="800" fill="url(#grad)"/>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A7C3F"/>
+      <stop offset="100%" stop-color="#1a3a18"/>
+    </linearGradient>
+  </defs>
+  <text x="600" y="380" font-family="Georgia, serif" font-size="120" font-weight="bold"
+        fill="rgba(247,244,236,0.15)" text-anchor="middle">N + H</text>
+  <text x="600" y="460" font-family="Georgia, serif" font-size="28"
+        fill="rgba(247,244,236,0.4)" text-anchor="middle">Dodajte hero sliku ovdje</text>
+  <text x="600" y="500" font-family="Georgia, serif" font-size="20"
+        fill="rgba(247,244,236,0.3)" text-anchor="middle">images/hero.jpg</text>
+</svg>

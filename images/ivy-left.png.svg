@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 400" fill="none">
+  <!-- Ivy vine decoration - left side -->
+  <path d="M90 400 Q85 350 90 300 Q95 250 88 200 Q82 150 90 100 Q96 60 90 10"
+        stroke="#4A7C3F" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Leaves -->
+  <path d="M90 360 C75 345, 55 355, 50 370 C65 375, 80 370, 90 360Z" fill="#4A7C3F" opacity="0.7"/>
+  <path d="M90 360 C105 345, 125 355, 130 370 C115 375, 100 370, 90 360Z" fill="#2B5A27" opacity="0.5"/>
+  <path d="M88 300 C73 285, 53 295, 48 310 C63 315, 78 310, 88 300Z" fill="#4A7C3F" opacity="0.7"/>
+  <path d="M88 300 C103 285, 123 295, 128 310 C113 315, 98 310, 88 300Z" fill="#2B5A27" opacity="0.5"/>
+  <path d="M90 240 C75 225, 55 235, 50 250 C65 255, 80 250, 90 240Z" fill="#7AB648" opacity="0.6"/>
+  <path d="M90 240 C105 225, 125 235, 130 250 C115 255, 100 250, 90 240Z" fill="#4A7C3F" opacity="0.5"/>
+  <path d="M88 180 C73 165, 53 175, 48 190 C63 195, 78 190, 88 180Z" fill="#4A7C3F" opacity="0.7"/>
+  <path d="M88 180 C103 165, 123 175, 128 190 C113 195, 98 190, 88 180Z" fill="#2B5A27" opacity="0.5"/>
+  <path d="M90 120 C75 105, 55 115, 50 130 C65 135, 80 130, 90 120Z" fill="#7AB648" opacity="0.6"/>
+  <path d="M90 120 C105 105, 125 115, 130 130 C115 135, 100 130, 90 120Z" fill="#4A7C3F" opacity="0.5"/>
+</svg>

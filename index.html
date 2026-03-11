@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N + H — 20. lipnja 2026.</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#datum">Datum</a>
+      <a href="#program">Program</a>
+      <a href="#lokacija">Lokacija</a>
+      <a href="#galerija">Galerija</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-image-wrap">
+      <img src="images/hero.png" alt="Nikola i Helena" class="hero-img" id="heroImg"
+           onerror="this.src='images/hero-placeholder.svg'" />
+    </div>
+  </section>
+
+  <!-- ===================== DATE ===================== -->
+  <section id="datum" class="section-cream">
+    <div class="ivy-left" aria-hidden="true">
+      <svg viewBox="0 0 120 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 380 Q56 330 60 280 Q64 230 58 180 Q52 130 60 80 Q66 40 60 5" stroke="#4A7C3F" stroke-width="1.5" opacity="0.5"/>
+        <path d="M60 340 C45 325,25 335,20 350 C35 355,50 350,60 340Z" fill="#4A7C3F" opacity="0.65"/>
+        <path d="M60 340 C75 325,95 335,100 350 C85 355,70 350,60 340Z" fill="#2B5A27" opacity="0.45"/>
+        <path d="M58 270 C43 255,23 265,18 280 C33 285,48 280,58 270Z" fill="#7AB648" opacity="0.55"/>
+        <path d="M58 270 C73 255,93 265,98 280 C83 285,68 280,58 270Z" fill="#4A7C3F" opacity="0.45"/>
+        <path d="M60 200 C45 185,25 195,20 210 C35 215,50 210,60 200Z" fill="#4A7C3F" opacity="0.65"/>
+        <path d="M60 200 C75 185,95 195,100 210 C85 215,70 210,60 200Z" fill="#2B5A27" opacity="0.45"/>
+        <path d="M58 130 C43 115,23 125,18 140 C33 145,48 140,58 130Z" fill="#7AB648" opacity="0.55"/>
+        <path d="M58 130 C73 115,93 125,98 140 C83 145,68 140,58 130Z" fill="#4A7C3F" opacity="0.45"/>
+        <path d="M60 65 C45 50,25 60,20 75 C35 80,50 75,60 65Z" fill="#4A7C3F" opacity="0.6"/>
+        <path d="M60 65 C75 50,95 60,100 75 C85 80,70 75,60 65Z" fill="#2B5A27" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="date-content">
+      <div class="date-block">
+        <span class="date-20">20</span>
+        <div class="date-right">
+          <div class="date-top-row">
+            <span class="date-month">lipanj</span>
+            <div class="date-monogram">
+              <span>N</span>
+              <span>+</span>
+              <span>H</span>
+            </div>
+          </div>
+          <div class="date-bottom-row">
+            <span class="date-year">2026</span>
+            <span class="date-dots">···</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ivy-right" aria-hidden="true">
+      <svg viewBox="0 0 120 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 380 Q64 330 60 280 Q56 230 62 180 Q68 130 60 80 Q54 40 60 5" stroke="#4A7C3F" stroke-width="1.5" opacity="0.5"/>
+        <path d="M60 340 C75 325,95 335,100 350 C85 355,70 350,60 340Z" fill="#4A7C3F" opacity="0.65"/>
+        <path d="M60 340 C45 325,25 335,20 350 C35 355,50 350,60 340Z" fill="#2B5A27" opacity="0.45"/>
+        <path d="M62 270 C77 255,97 265,102 280 C87 285,72 280,62 270Z" fill="#7AB648" opacity="0.55"/>
+        <path d="M62 270 C47 255,27 265,22 280 C37 285,52 280,62 270Z" fill="#4A7C3F" opacity="0.45"/>
+        <path d="M60 200 C75 185,95 195,100 210 C85 215,70 210,60 200Z" fill="#4A7C3F" opacity="0.65"/>
+        <path d="M60 200 C45 185,25 195,20 210 C35 215,50 210,60 200Z" fill="#2B5A27" opacity="0.45"/>
+        <path d="M62 130 C77 115,97 125,102 140 C87 145,72 140,62 130Z" fill="#7AB648" opacity="0.55"/>
+        <path d="M62 130 C47 115,27 125,22 140 C37 145,52 140,62 130Z" fill="#4A7C3F" opacity="0.45"/>
+        <path d="M60 65 C75 50,95 60,100 75 C85 80,70 75,60 65Z" fill="#4A7C3F" opacity="0.6"/>
+        <path d="M60 65 C45 50,25 60,20 75 C35 80,50 75,60 65Z" fill="#2B5A27" opacity="0.4"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== COUNTDOWN ===================== -->
+  <section id="countdown" class="section-cream">
+    <p class="countdown-label">Preostalo je još samo</p>
+    <div class="countdown-line"></div>
+    <div class="countdown-grid">
+      <div class="countdown-item">
+        <span class="countdown-value" id="cd-days">—</span>
+        <span class="countdown-unit">Dana</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="cd-hours">—</span>
+        <span class="countdown-unit">Sati</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="cd-minutes">—</span>
+        <span class="countdown-unit">Minuta</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INVITATION TEXT ===================== -->
+  <section id="invitation" class="section-cream">
+    <p class="invitation-text">
+      S velikom radošću pozivamo vas da s nama podijelite naš najvažniji dan.
+    </p>
+  </section>
+
+  <!-- ===================== PROGRAM ===================== -->
+  <section id="program" class="section-cream">
+    <h2 class="section-title dark">Program dana</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="tl-time">11:00</div>
+        <div class="tl-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Skupljanje gostiju">
+            <rect x="6" y="18" width="36" height="26" rx="2" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M2 20L24 4L46 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <rect x="18" y="28" width="12" height="16" rx="1" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M12 18V12h8v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="tl-desc">Skupljanje gostiju</div>
+      </div>
+
+      <div class="tl-ivy">
+        <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="ivy-divider">
+          <path d="M40 20 C30 10, 10 15, 5 20 C10 25, 30 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
+          <path d="M40 20 C50 10, 70 15, 75 20 C70 25, 50 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
+          <circle cx="40" cy="20" r="2" fill="#4A7C3F"/>
+        </svg>
+      </div>
+
+      <div class="timeline-item tl-alt">
+        <div class="tl-time">14:30</div>
+        <div class="tl-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Vjenčanje kod matičara">
+            <circle cx="16" cy="28" r="10" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="32" cy="28" r="10" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M24 8 L24 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M20 12 L28 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="tl-desc">Vjenčanje kod matičara</div>
+      </div>
+
+      <div class="tl-ivy">
+        <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="ivy-divider">
+          <path d="M40 20 C30 10, 10 15, 5 20 C10 25, 30 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
+          <path d="M40 20 C50 10, 70 15, 75 20 C70 25, 50 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
+          <circle cx="40" cy="20" r="2" fill="#4A7C3F"/>
+        </svg>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-time">17:00</div>
+        <div class="tl-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Doček u Pavlomiru">
+            <path d="M16 6 L16 24 Q16 36 24 38 Q32 36 32 24 L32 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M12 6 L36 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M24 38 L24 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M18 44 L30 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="tl-desc">Doček u Pavlomiru</div>
+      </div>
+
+      <div class="tl-ivy">
+        <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="ivy-divider">
+          <path d="M40 20 C30 10, 10 15, 5 20 C10 25, 30 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
+          <path d="M40 20 C50 10, 70 15, 75 20 C70 25, 50 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
+          <circle cx="40" cy="20" r="2" fill="#4A7C3F"/>
+        </svg>
+      </div>
+
+      <div class="timeline-item tl-alt">
+        <div class="tl-time">19:00</div>
+        <div class="tl-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Večera">
+            <path d="M10 8 L10 24 Q10 32 18 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M18 34 L18 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M10 8 L26 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M38 8 L38 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M34 8 Q30 16 34 24 Q38 32 34 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="tl-desc">Večera</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== LOCATION ===================== -->
+  <section id="lokacija">
+    <div class="location-hero">
+      <img src="images/location.jpg" alt="Vinarija Pavlomir" class="location-hero-img" />
+      <div class="location-hero-overlay">
+        <h2 class="location-hero-title">Lokacije</h2>
+      </div>
+    </div>
+
+    <div class="location-cards section-cream">
+      <div class="location-card">
+        <div class="loc-time">11:00</div>
+        <div class="loc-name">Kuća Mihotić</div>
+        <div class="loc-address">Ul. 45. staranje države 67, Mihotić</div>
+        <a href="https://maps.google.com/?q=Mihotić" target="_blank" rel="noopener" class="loc-pin" aria-label="Otvori na Google Maps">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="location-card">
+        <div class="loc-time">14:30</div>
+        <div class="loc-name">Općina Matulji</div>
+        <div class="loc-address">Trg maršala Tita 11, Matulji</div>
+        <div class="loc-actions">
+          <a href="https://maps.google.com/?q=Trg+maršala+Tita+11,+Matulji" target="_blank" rel="noopener" class="loc-pin" aria-label="Otvori na Google Maps">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </a>
+          <a href="https://maps.google.com/?q=parking+Matulji" target="_blank" rel="noopener" class="loc-parking" aria-label="Parking na Google Maps">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M9 17V7h4a3 3 0 0 1 0 6H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="loc-time">17:00</div>
+        <div class="loc-name">Vinarija Pavlomir</div>
+        <div class="loc-address">Pavlomir 2, 51220, Novi Vinodolski</div>
+        <a href="https://maps.google.com/?q=Pavlomir+2+Novi+Vinodolski" target="_blank" rel="noopener" class="loc-pin" aria-label="Otvori na Google Maps">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="location-note section-cream">
+      Klikom na ikone lokacija i parkinga, dobivate direktnu poveznicu na Google Maps.
+    </p>
+  </section>
+
+  <!-- ===================== RSVP ===================== -->
+  <section id="rsvp" class="section-green">
+    <h2 class="section-title">Potvrdite svoj dolazak</h2>
+    <a href="https://forms.google.com/PLACEHOLDER" target="_blank" rel="noopener" class="rsvp-btn">
+      Potvrdi dolazak
+    </a>
+    <p class="rsvp-note">Klikom na gumb otvorit će se Google Forms obrazac za potvrdu dolaska.</p>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section id="galerija" class="section-cream">
+    <h2 class="section-title dark">Galerija</h2>
+    <div class="gallery-grid">
+      <a href="images/gallery/g1.jpg" class="gallery-item gallery-large" data-lightbox>
+        <img src="images/gallery/g1.jpg" alt="Galerija 1" loading="lazy"
+             onerror="this.src='images/gallery/g1-placeholder.svg'" />
+      </a>
+      <a href="images/gallery/g2.jpg" class="gallery-item gallery-large" data-lightbox>
+        <img src="images/gallery/g2.jpg" alt="Galerija 2" loading="lazy"
+             onerror="this.src='images/gallery/g2-placeholder.svg'" />
+      </a>
+      <a href="images/gallery/g3.jpg" class="gallery-item" data-lightbox>
+        <img src="images/gallery/g3.jpg" alt="Galerija 3" loading="lazy"
+             onerror="this.src='images/gallery/g3-placeholder.svg'" />
+      </a>
+      <a href="images/gallery/g4.jpg" class="gallery-item" data-lightbox>
+        <img src="images/gallery/g4.jpg" alt="Galerija 4" loading="lazy"
+             onerror="this.src='images/gallery/g4-placeholder.svg'" />
+      </a>
+      <a href="images/gallery/g5.jpg" class="gallery-item" data-lightbox>
+        <img src="images/gallery/g5.jpg" alt="Galerija 5" loading="lazy"
+             onerror="this.src='images/gallery/g5-placeholder.svg'" />
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Pregled slike">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Zatvori">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Prethodna">&#8249;</button>
+    <img id="lightboxImg" src="" alt="" />
+    <button class="lightbox-next" id="lightboxNext" aria-label="Sljedeća">&#8250;</button>
+  </div>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="kontakt" class="section-cream">
+    <h2 class="section-title dark">Kontakti</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-name">Nikola</div>
+        <a href="tel:+38630257897" class="contact-link">+386 30 257 897</a>
+        <a href="mailto:nikola.balaban1@gmail.com" class="contact-link">nikola.balaban1@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Helena</div>
+        <a href="tel:+385919348813" class="contact-link">+385 91 934 8813</a>
+        <a href="mailto:helenabalaz.art@gmail.com" class="contact-link">helenabalaz.art@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer" class="section-cream">
+    <div class="footer-mono" aria-hidden="true">N</div>
+    <div class="footer-ivy" aria-hidden="true">
+      <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 30 C80 15, 50 20, 20 25 C50 35, 80 45, 100 30Z" fill="#4A7C3F" opacity="0.7"/>
+        <path d="M100 30 C120 15, 150 20, 180 25 C150 35, 120 45, 100 30Z" fill="#4A7C3F" opacity="0.7"/>
+        <circle cx="100" cy="30" r="3" fill="#2B5A27" opacity="0.9"/>
+      </svg>
+    </div>
+    <p class="footer-copy">N + H &nbsp;·&nbsp; 20. lipnja 2026.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
