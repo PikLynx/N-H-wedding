@@ -23,7 +23,7 @@
    COUNTDOWN TIMER
    ============================================================ */
 (function () {
-  const TARGET = new Date('2026-06-20T00:00:00+02:00'); // CET (UTC+2, summer)
+  const TARGET = new Date('2026-06-20T11:00:00+02:00'); // CET (UTC+2, summer)
 
   const elDays    = document.getElementById('cd-days');
   const elHours   = document.getElementById('cd-hours');

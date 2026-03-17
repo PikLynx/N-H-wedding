@@ -14,7 +14,6 @@
       <a href="#datum">Datum</a>
       <a href="#program">Program</a>
       <a href="#lokacija">Lokacija</a>
-      <a href="#galerija">Galerija</a>
       <a href="#kontakt">Kontakt</a>
     </div>
   </nav>
@@ -22,66 +21,44 @@
   <!-- ===================== HERO ===================== -->
   <section id="hero">
     <div class="hero-image-wrap">
-      <img src="images/hero.png" alt="Nikola i Helena" class="hero-img" id="heroImg"
+      <img src="images/assets/N+H+D.png" alt="Nikola i Helena" class="hero-img" id="heroImg"
            onerror="this.src='images/hero-placeholder.svg'" />
     </div>
   </section>
 
-  <!-- ===================== DATE ===================== -->
-  <section id="datum" class="section-cream">
-    <div class="ivy-left" aria-hidden="true">
-      <svg viewBox="0 0 120 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M60 380 Q56 330 60 280 Q64 230 58 180 Q52 130 60 80 Q66 40 60 5" stroke="#4A7C3F" stroke-width="1.5" opacity="0.5"/>
-        <path d="M60 340 C45 325,25 335,20 350 C35 355,50 350,60 340Z" fill="#4A7C3F" opacity="0.65"/>
-        <path d="M60 340 C75 325,95 335,100 350 C85 355,70 350,60 340Z" fill="#2B5A27" opacity="0.45"/>
-        <path d="M58 270 C43 255,23 265,18 280 C33 285,48 280,58 270Z" fill="#7AB648" opacity="0.55"/>
-        <path d="M58 270 C73 255,93 265,98 280 C83 285,68 280,58 270Z" fill="#4A7C3F" opacity="0.45"/>
-        <path d="M60 200 C45 185,25 195,20 210 C35 215,50 210,60 200Z" fill="#4A7C3F" opacity="0.65"/>
-        <path d="M60 200 C75 185,95 195,100 210 C85 215,70 210,60 200Z" fill="#2B5A27" opacity="0.45"/>
-        <path d="M58 130 C43 115,23 125,18 140 C33 145,48 140,58 130Z" fill="#7AB648" opacity="0.55"/>
-        <path d="M58 130 C73 115,93 125,98 140 C83 145,68 140,58 130Z" fill="#4A7C3F" opacity="0.45"/>
-        <path d="M60 65 C45 50,25 60,20 75 C35 80,50 75,60 65Z" fill="#4A7C3F" opacity="0.6"/>
-        <path d="M60 65 C75 50,95 60,100 75 C85 80,70 75,60 65Z" fill="#2B5A27" opacity="0.4"/>
-      </svg>
-    </div>
-    <div class="date-content">
-      <div class="date-block">
-        <span class="date-20">20</span>
-        <div class="date-right">
-          <div class="date-top-row">
-            <span class="date-month">lipanj</span>
-            <div class="date-monogram">
-              <span>N</span>
-              <span>+</span>
-              <span>H</span>
+  <!-- ===================== DATE + COUNTDOWN WRAPPER ===================== -->
+  <div class="ivy-panel">
+  <div class="ivy-left" aria-hidden="true">
+    <img src="images/assets/LOZA-SVG/1-LOZA.svg" alt="" />
+  </div>
+
+  <section class="date-ivy-wrapper section-cream">
+
+    <!-- ===================== DATE ===================== -->
+    <section id="datum">
+      <div class="date-content">
+        <div class="date-block">
+          <span class="date-20">20</span>
+          <div class="date-right">
+            <div class="date-top-row">
+              <span class="date-month">lipanj</span>
+              <div class="date-monogram">
+                <span>N</span>
+                <span>+</span>
+                <span>H</span>
+              </div>
             </div>
-          </div>
-          <div class="date-bottom-row">
-            <span class="date-year">2026</span>
-            <span class="date-dots">···</span>
+            <div class="date-bottom-row">
+              <span class="date-year">2026</span>
+              <span class="date-dots">···</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="ivy-right" aria-hidden="true">
-      <svg viewBox="0 0 120 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M60 380 Q64 330 60 280 Q56 230 62 180 Q68 130 60 80 Q54 40 60 5" stroke="#4A7C3F" stroke-width="1.5" opacity="0.5"/>
-        <path d="M60 340 C75 325,95 335,100 350 C85 355,70 350,60 340Z" fill="#4A7C3F" opacity="0.65"/>
-        <path d="M60 340 C45 325,25 335,20 350 C35 355,50 350,60 340Z" fill="#2B5A27" opacity="0.45"/>
-        <path d="M62 270 C77 255,97 265,102 280 C87 285,72 280,62 270Z" fill="#7AB648" opacity="0.55"/>
-        <path d="M62 270 C47 255,27 265,22 280 C37 285,52 280,62 270Z" fill="#4A7C3F" opacity="0.45"/>
-        <path d="M60 200 C75 185,95 195,100 210 C85 215,70 210,60 200Z" fill="#4A7C3F" opacity="0.65"/>
-        <path d="M60 200 C45 185,25 195,20 210 C35 215,50 210,60 200Z" fill="#2B5A27" opacity="0.45"/>
-        <path d="M62 130 C77 115,97 125,102 140 C87 145,72 140,62 130Z" fill="#7AB648" opacity="0.55"/>
-        <path d="M62 130 C47 115,27 125,22 140 C37 145,52 140,62 130Z" fill="#4A7C3F" opacity="0.45"/>
-        <path d="M60 65 C75 50,95 60,100 75 C85 80,70 75,60 65Z" fill="#4A7C3F" opacity="0.6"/>
-        <path d="M60 65 C45 50,25 60,20 75 C35 80,50 75,60 65Z" fill="#2B5A27" opacity="0.4"/>
-      </svg>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== COUNTDOWN ===================== -->
-  <section id="countdown" class="section-cream">
+    <!-- ===================== COUNTDOWN ===================== -->
+    <section id="countdown">
     <p class="countdown-label">Preostalo je još samo</p>
     <div class="countdown-line"></div>
     <div class="countdown-grid">
@@ -98,14 +75,17 @@
         <span class="countdown-unit">Minuta</span>
       </div>
     </div>
-  </section>
+    </section>
+  </section><!-- end date-ivy-wrapper -->
 
   <!-- ===================== INVITATION TEXT ===================== -->
-  <section id="invitation" class="section-cream">
+  <section id="invitation" class="section-green">
     <p class="invitation-text">
       S velikom radošću pozivamo vas da s nama podijelite naš najvažniji dan.
     </p>
   </section>
+
+  </div><!-- end ivy-panel -->
 
   <!-- ===================== PROGRAM ===================== -->
   <section id="program" class="section-cream">
@@ -114,79 +94,37 @@
     <div class="timeline">
 
       <div class="timeline-item">
-        <div class="tl-time">11:00</div>
         <div class="tl-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Skupljanje gostiju">
-            <rect x="6" y="18" width="36" height="26" rx="2" stroke="currentColor" stroke-width="2.5"/>
-            <path d="M2 20L24 4L46 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <rect x="18" y="28" width="12" height="16" rx="1" stroke="currentColor" stroke-width="2.5"/>
-            <path d="M12 18V12h8v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+          <img src="images/assets/KUCA.png" alt="Skupljanje gostiju" />
         </div>
+        <div class="tl-time"><img src="images/assets/LIST.png" alt="" aria-hidden="true" /><span>11:00</span></div>
         <div class="tl-desc">Skupljanje gostiju</div>
       </div>
 
-      <div class="tl-ivy">
-        <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="ivy-divider">
-          <path d="M40 20 C30 10, 10 15, 5 20 C10 25, 30 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
-          <path d="M40 20 C50 10, 70 15, 75 20 C70 25, 50 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
-          <circle cx="40" cy="20" r="2" fill="#4A7C3F"/>
-        </svg>
-      </div>
 
       <div class="timeline-item tl-alt">
-        <div class="tl-time">14:30</div>
         <div class="tl-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Vjenčanje kod matičara">
-            <circle cx="16" cy="28" r="10" stroke="currentColor" stroke-width="2.5"/>
-            <circle cx="32" cy="28" r="10" stroke="currentColor" stroke-width="2.5"/>
-            <path d="M24 8 L24 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M20 12 L28 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
+          <img src="images/assets/PRSTENI.png" alt="Vjenčanje kod matičara" />
         </div>
-        <div class="tl-desc">Vjenčanje kod matičara</div>
+        <div class="tl-time"><img src="images/assets/LIST.png" alt="" aria-hidden="true" /><span>14:30</span></div>
+        <div class="tl-desc">Obred</div>
       </div>
 
-      <div class="tl-ivy">
-        <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="ivy-divider">
-          <path d="M40 20 C30 10, 10 15, 5 20 C10 25, 30 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
-          <path d="M40 20 C50 10, 70 15, 75 20 C70 25, 50 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
-          <circle cx="40" cy="20" r="2" fill="#4A7C3F"/>
-        </svg>
-      </div>
 
       <div class="timeline-item">
-        <div class="tl-time">17:00</div>
         <div class="tl-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Doček u Pavlomiru">
-            <path d="M16 6 L16 24 Q16 36 24 38 Q32 36 32 24 L32 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M12 6 L36 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M24 38 L24 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M18 44 L30 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
+          <img src="images/assets/CASE.png" alt="Doček u Pavlomiru" />
         </div>
+        <div class="tl-time"><img src="images/assets/LIST.png" alt="" aria-hidden="true" /><span>17:00</span></div>
         <div class="tl-desc">Doček u Pavlomiru</div>
       </div>
 
-      <div class="tl-ivy">
-        <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="ivy-divider">
-          <path d="M40 20 C30 10, 10 15, 5 20 C10 25, 30 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
-          <path d="M40 20 C50 10, 70 15, 75 20 C70 25, 50 30, 40 20Z" fill="#4A7C3F" opacity="0.4"/>
-          <circle cx="40" cy="20" r="2" fill="#4A7C3F"/>
-        </svg>
-      </div>
 
       <div class="timeline-item tl-alt">
-        <div class="tl-time">19:00</div>
         <div class="tl-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Večera">
-            <path d="M10 8 L10 24 Q10 32 18 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M18 34 L18 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M10 8 L26 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M38 8 L38 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M34 8 Q30 16 34 24 Q38 32 34 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
+          <img src="images/assets/VECERA.png" alt="Večera" />
         </div>
+        <div class="tl-time"><img src="images/assets/LIST.png" alt="" aria-hidden="true" /><span>18:00</span></div>
         <div class="tl-desc">Večera</div>
       </div>
 
@@ -196,18 +134,17 @@
   <!-- ===================== LOCATION ===================== -->
   <section id="lokacija">
     <div class="location-hero">
-      <img src="images/location.jpg" alt="Vinarija Pavlomir" class="location-hero-img" />
-      <div class="location-hero-overlay">
-        <h2 class="location-hero-title">Lokacije</h2>
-      </div>
+      <img src="images/assets/PAVLOMIR.png" alt="Vinarija Pavlomir" class="location-hero-img" />
+      <div class="location-hero-overlay"></div>
     </div>
+    <h2 class="section-title dark">Lokacije</h2>
 
     <div class="location-cards section-cream">
       <div class="location-card">
         <div class="loc-time">11:00</div>
-        <div class="loc-name">Kuća Mihotić</div>
-        <div class="loc-address">Ul. 45. staranje države 67, Mihotić</div>
-        <a href="https://maps.google.com/?q=Mihotić" target="_blank" rel="noopener" class="loc-pin" aria-label="Otvori na Google Maps">
+        <div class="loc-name">Kuća Mihotići</div>
+        <div class="loc-address">c. 43. Istarske divizije 65, Mihotići</div>
+        <a href="https://maps.google.com/?q=c.+43.+Istarske+divizije+65,+Mihotići" target="_blank" rel="noopener" class="loc-pin" aria-label="Otvori na Google Maps">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.8"/>
             <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/>
@@ -256,14 +193,15 @@
   <!-- ===================== RSVP ===================== -->
   <section id="rsvp" class="section-green">
     <h2 class="section-title">Potvrdite svoj dolazak</h2>
-    <a href="https://forms.google.com/PLACEHOLDER" target="_blank" rel="noopener" class="rsvp-btn">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxFDA_Y-fwlbJ0MjNLVVon_XvIAGIG0FHtHNyiC3i_xCo40g/viewform?usp=header" target="_blank" rel="noopener" class="rsvp-btn">
       Potvrdi dolazak
     </a>
     <p class="rsvp-note">Klikom na gumb otvorit će se Google Forms obrazac za potvrdu dolaska.</p>
+    <p class="rsvp-note rsvp-gift">Vaša prisutnost na našem vjenčanju najveći nam je dar. Ako nas ipak želite darivati, bit ćemo zahvalni na novčanom prilogu umjesto klasičnih poklona.</p>
   </section>
 
   <!-- ===================== GALLERY ===================== -->
-  <section id="galerija" class="section-cream">
+  <section id="galerija" class="section-cream" style="display:none">
     <h2 class="section-title dark">Galerija</h2>
     <div class="gallery-grid">
       <a href="images/gallery/g1.jpg" class="gallery-item gallery-large" data-lightbox>
@@ -316,13 +254,12 @@
 
   <!-- ===================== FOOTER ===================== -->
   <footer id="footer" class="section-cream">
-    <div class="footer-mono" aria-hidden="true">N</div>
-    <div class="footer-ivy" aria-hidden="true">
-      <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M100 30 C80 15, 50 20, 20 25 C50 35, 80 45, 100 30Z" fill="#4A7C3F" opacity="0.7"/>
-        <path d="M100 30 C120 15, 150 20, 180 25 C150 35, 120 45, 100 30Z" fill="#4A7C3F" opacity="0.7"/>
-        <circle cx="100" cy="30" r="3" fill="#2B5A27" opacity="0.9"/>
-      </svg>
+    <div class="footer-vines" aria-hidden="true">
+      <img src="images/assets/LOZA-SVG/4-LOZA.svg" alt="" class="footer-vine-left" />
+      <img src="images/assets/LOZA-SVG/5-LOZA.svg" alt="" class="footer-vine-right" />
+    </div>
+    <div class="footer-monogram" aria-hidden="true">
+      <img src="images/assets/NH-BALABAN.png" alt="" />
     </div>
     <p class="footer-copy">N + H &nbsp;·&nbsp; 20. lipnja 2026.</p>
   </footer>

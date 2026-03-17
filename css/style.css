@@ -41,11 +41,11 @@
    DESIGN TOKENS
    ============================================================ */
 :root {
-  --green-dark:   #2B5A27;
-  --green-mid:    #4A7C3F;
-  --green-light:  #7AB648;
+  --green-dark:   #52631e;
+  --green-mid:    #52631e;
+  --green-light:  #52631e;
   --bg-cream:     #F7F4EC;
-  --bg-green:     #2B5A27;
+  --bg-green:     #52631e;
   --text-dark:    #1A1A1A;
   --text-muted:   #5A5A5A;
   --text-cream:   #F7F4EC;
@@ -185,34 +185,47 @@ a {
 
 
 /* ============================================================
-   DATE SECTION
+   DATE + COUNTDOWN WITH IVY
    ============================================================ */
-#datum {
+.date-ivy-wrapper {
   position: relative;
+  padding: 5rem 2rem 5rem;
+  overflow: visible;
+}
+
+#datum,
+#countdown {
+  position: relative;
+  z-index: 1;
+}
+
+.ivy-panel {
+  position: relative;
+}
+
+.ivy-left {
+  position: absolute;
+  top: -300px;
+  bottom: -50px;
+  left: -50px;
+  width: clamp(320px, 34vw, 540px);
+  pointer-events: none;
+  opacity: 0.92;
+  z-index: 2;
+}
+
+.ivy-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+#datum {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 2rem 3rem;
-  overflow: hidden;
-}
-
-.ivy-left,
-.ivy-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: clamp(80px, 14vw, 180px);
-  pointer-events: none;
-  opacity: 0.85;
-}
-
-.ivy-left { left: 0; }
-.ivy-right { right: 0; transform: translateY(-50%) scaleX(-1); }
-
-.ivy-left svg,
-.ivy-right svg {
-  width: 100%;
-  height: auto;
+  padding-bottom: 2rem;
 }
 
 .date-content {
@@ -325,7 +338,7 @@ a {
 .countdown-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0;
 }
 
@@ -343,22 +356,25 @@ a {
   color: var(--text-dark);
   letter-spacing: 0.02em;
   margin-top: 0.1em;
+  text-align: center;
 }
 
 /* ============================================================
    INVITATION
    ============================================================ */
 #invitation {
-  padding: 2rem 2rem 5rem;
+  padding: 4rem 2rem;
   text-align: center;
+  background-color: var(--bg-green);
+  color: var(--text-cream);
 }
 
 .invitation-text {
   max-width: 640px;
   margin: 0 auto;
   font-weight: 400;
-  font-size: clamp(1rem, 2.5vw, 1.35rem);
-  color: var(--text-muted);
+  font-size: clamp(1.2rem, 3vw, 1.65rem);
+  color: var(--text-cream);
   line-height: 1.8;
   letter-spacing: 0.02em;
 
@@ -385,7 +401,7 @@ a {
 }
 
 /* Wrapper so inline-block title can center */
-#program, #galerija, #kontakt, #rsvp {
+#program, #lokacija, #galerija, #kontakt, #rsvp {
   text-align: center;
 }
 
@@ -403,7 +419,7 @@ a {
   text-align: left;
 }
 
-/* Default: icon center, time left, desc right */
+/* Layout: [icon] [leaf/time] [desc] — leaf always center */
 .timeline-item {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -413,50 +429,68 @@ a {
   padding: 0.75rem 0;
 }
 
-/* Alternating: flip — desc left, icon center, time right */
+/* Alt: flip — [desc] [leaf/time] [icon] */
 .timeline-item.tl-alt {
   direction: rtl;
 }
 .timeline-item.tl-alt > * {
   direction: ltr;
 }
-.timeline-item.tl-alt .tl-time {
-  text-align: left;
-}
 .timeline-item.tl-alt .tl-desc {
   text-align: right;
 }
 
 .tl-time {
+  display: grid;
+  place-items: center;
+  width: clamp(100px, 13vw, 150px);
+  height: clamp(100px, 13vw, 150px);
+  flex-shrink: 0;
+}
+
+.tl-time img,
+.tl-time span {
+  grid-area: 1 / 1;
+}
+
+.tl-time img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: -16px;
+}
+
+.tl-time span {
   font-weight: 700;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: var(--green-dark);
-  text-align: right;
-  letter-spacing: 0.05em;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: var(--bg-cream);
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .tl-icon {
-  width: clamp(52px, 9vw, 76px);
-  height: clamp(52px, 9vw, 76px);
-  background: transparent;
-  border: 2px solid var(--green-mid);
-  border-radius: 50%;
+  width: clamp(60px, 10vw, 80px);
+  height: clamp(60px, 10vw, 80px);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding: clamp(12px, 1.8vw, 18px);
 }
 
-.tl-icon svg {
+.tl-icon img {
   width: 100%;
   height: 100%;
-  color: var(--green-mid);
+  object-fit: contain;
+}
+
+.timeline-item:last-child .tl-icon {
+  width: clamp(80px, 13vw, 110px);
+  height: clamp(80px, 13vw, 110px);
 }
 
 .tl-desc {
   font-weight: 400;
-  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
   color: var(--text-dark);
   letter-spacing: 0.02em;
 }
@@ -464,14 +498,13 @@ a {
 .tl-ivy {
   display: flex;
   justify-content: center;
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
   width: 100%;
 }
 
 .ivy-divider {
-  width: clamp(60px, 12vw, 100px);
+  width: clamp(80px, 14vw, 130px);
   height: auto;
-  opacity: 0.6;
 }
 
 /* ============================================================
@@ -481,26 +514,28 @@ a {
   /* no extra padding — hero image is edge-to-edge */
 }
 
+#lokacija > .section-title {
+  margin-top: 5rem;
+}
+
 .location-hero {
   position: relative;
-  height: clamp(200px, 40vw, 500px);
-  overflow: hidden;
 }
 
 .location-hero-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  display: block;
 }
 
 .location-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(43, 90, 39, 0.45);
+  background: linear-gradient(to top, rgba(82, 99, 30, 0.7) 0%, transparent 50%);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .location-hero-title {
@@ -607,6 +642,9 @@ a {
 #rsvp {
   padding: 5rem 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rsvp-btn {
@@ -636,6 +674,11 @@ a {
   margin-top: 1.25rem;
   font-size: 0.85rem;
   color: rgba(247, 244, 236, 0.7);
+}
+
+.rsvp-gift {
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
 /* ============================================================
@@ -837,29 +880,34 @@ a {
   overflow: hidden;
 }
 
-.footer-mono {
+.footer-vines {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  font-size: clamp(12rem, 30vw, 22rem);
-  color: rgba(43, 90, 39, 0.07);
-  line-height: 1;
   pointer-events: none;
-  user-select: none;
-  letter-spacing: -0.05em;
 }
 
-.footer-ivy {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
+.footer-vine-left,
+.footer-vine-right {
+  position: absolute;
+  bottom: 0;
+  width: clamp(140px, 22vw, 300px);
+  height: auto;
+  opacity: 0.85;
 }
 
-.footer-ivy svg {
-  width: clamp(120px, 25vw, 200px);
+.footer-vine-left  { left: 0;  transform: scaleX(-1); }
+.footer-vine-right { right: 0; }
+
+.footer-monogram {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 1rem;
+  width: clamp(120px, 20vw, 200px);
+  opacity: 0.25;
+}
+
+.footer-monogram img {
+  width: 100%;
   height: auto;
 }
 
@@ -878,8 +926,8 @@ a {
 @media (max-width: 768px) {
   .ivy-left,
   .ivy-right {
-    width: 60px;
-    opacity: 0.5;
+    width: clamp(180px, 46vw, 260px);
+    opacity: 0.9;
   }
 
   .timeline-item {
