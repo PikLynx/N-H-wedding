@@ -901,7 +901,7 @@ a {
 }
 
 .footer-vine-left  { left: 0;  transform: scaleX(-1); }
-.footer-vine-right { right: -40px; bottom: -30px; width: clamp(180px, 28vw, 380px); }
+.footer-vine-right { right: -160px; bottom: -30px; width: clamp(180px, 100vw, 400px); }
 
 .footer-monogram {
   position: relative;
