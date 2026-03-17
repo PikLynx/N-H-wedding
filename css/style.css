@@ -929,6 +929,12 @@ a {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
+  .footer-vine-right {
+    width: 200px;
+    right: -60px;
+    bottom: -15px;
+  }
+
   .ivy-left,
   .ivy-right {
     width: clamp(180px, 46vw, 260px);
