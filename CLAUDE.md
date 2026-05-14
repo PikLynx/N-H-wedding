@@ -18,13 +18,12 @@ python3 -m http.server 8080
 
 ## Deployment
 
-```bash
-# Deploy to S3 + invalidate CloudFront
-CF_DIST_ID=EXXXXXXXXX ./infra/deploy.sh
+Hosted on **GitHub Pages** — push to `main` and it deploys automatically.
 
-# S3 bucket: nh-wedding-2026 (eu-central-1)
-# index.html: cache 5 min; all other assets: cache 24 h
-```
+- **Live URL:** https://balabani.com.hr (custom domain)
+- **Source:** `main` branch, root `/`
+- **SSL:** certificate approved for `balabani.com.hr` and `www.balabani.com.hr`
+- No CI/CD workflows — GitHub Pages legacy "deploy from branch" handles it
 
 ## Font conversion (one-time setup)
 
